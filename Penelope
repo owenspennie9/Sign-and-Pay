@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign In and Pay </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form class="demo-form" action="/some-server-endpoint" method ="post">
+    <h1>Help Support For a Good Cause</h1>
+    <fieldset name="contact-info">
+      <legend>Contact info</legend>
+      <label for="first-name">First name</label>
+      <input placeholder="Penelope" type="text" name="first-name" id="first-name" />
+  
+      <label for="last-name">Last name</label>
+      <input type="text" name="last-name" id="last-name" placeholder="Baraona" />
+  
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Help@yahoo.com"/>
+  
+      <label for="phone" required>Phone #</label>
+      <input type="tel" pattern="^[1-9]\d{2}-\d{3}-\d{4}" name="phone" id="phone" placeholder="000-000-0000" title="A typical U.S. phone number" required/>
+    </fieldset>
+
+      <label class="question" for="feelings">How Can you pay?</label>
+      <select name="feelings" id="feelings" required>
+        <option value="0">Check.</option>
+        <option value="1" selected>PayPal.</option>
+        <option value="2">Credit Card.</option>
+      </select>
+      
+      <fieldset>
+        <legend class="question">How Can you pay?</legend>
+        <input type="radio" name="feelings-2" id="ans-great-1" value="0" checked>
+        <label for="ans-great-1">Check.</label>
+        <br>
+        <input type="radio" name="feelings-2" id="ans-great-2" value="1">
+        <label for="ans-great-2">PayPal.</label>
+        <br>
+        <input type="radio" name="feelings-2" id="ans-great-3" value="2">
+        <label for="ans-great-3">Credit Card.</label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
